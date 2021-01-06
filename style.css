@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 60pt;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.modal {
+  width: fit-content;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: red;
+  place-items: center;
+}
+
+.image-wrapper img {
+  height: 60vh;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  width: 50%;
+  margin-left: auto;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: green;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  background-color: aqua;
+}
