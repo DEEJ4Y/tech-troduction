@@ -10,18 +10,25 @@
 </head>
 
 <body>
-    <h1 class="heading">Register here!</h1>
+    <nav class="navbar">
+        <figure>
+            <img src="./images/SRMKZILLA-logo.png" alt="srmkzilla-logo" width="100px">
+        </figure>
+    </nav>
+
     <main class="modal">
         <div>
             <figure class="image-wrapper">
-                <img src="https://i.pinimg.com/originals/a4/73/c6/a473c6a9042f8f545d2512e0b87866f6.jpg" alt="bg imag" />
+                <img src="./images/hero.png" alt="bg image" />
             </figure>
         </div>
-        <div>
+        <div class="right-content">
+            <h1 class="heading">Register here!</h1>
             <form action="" class="form-wrapper">
-                <input type="text" required name="name" id="name" />
-                <input type="number" min="1" max="30" required name="age" id="age" />
-                <textarea name="message" required id="" cols="30" rows="7"></textarea>
+                <input type="text" required name="name" placeholder="Apoorva Arora" class="input-field" />
+                <input type="number" min="1" max="30" required name="age" placeholder="24" class="input-field" />
+                <textarea name="message" required cols="30" rows="7" placeholder="Ma'am, I am a huge fan of..."
+                    class="input-field"></textarea>
                 <button type="submit" class="submit-btn">Lets go!</button>
             </form>
             <div>
@@ -35,9 +42,10 @@
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <p>
-            made with love, <a href="https://srmkzilla.net" target="_blank">SRMKZILLA</a>
+            Made with love, <a href="https://srmkzilla.net" target="_blank">SRMKZILLA</a>
         </p>
     </footer>
 </body>

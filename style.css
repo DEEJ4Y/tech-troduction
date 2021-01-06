@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  background: #60c0ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -10,45 +16,87 @@ body {
   min-height: 100vh;
 }
 
-.heading {
-  font-size: 60pt;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 0;
+.navbar {
+  position: absolute;
+  top: 0;
 }
 
 .modal {
+  min-width: 60vw;
+  min-height: 60vh;
   width: fit-content;
-  border-radius: 0.5rem;
+  border-radius: 3rem;
+  box-shadow: 1px 2px 5px #232323;
   margin: auto;
-  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: red;
+  background-color: white;
   place-items: center;
 }
 
-.image-wrapper img {
-  height: 60vh;
+.right-content {
+  place-self: stretch;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 1.7rem;
 }
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-field {
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  padding: 15px 30px;
+  margin-top: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+}
+.input-field:focus {
+  background-color: #a0d1eb;
 }
 
 .submit-btn {
   width: 50%;
   margin-left: auto;
-  border-radius: 0.5rem;
-  padding: 0.2rem 0.3rem;
+  border-radius: 5rem;
+  padding: 1rem;
   font-size: 1rem;
-  margin-top: 1rem;
-  background-color: green;
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  background-color: #57b846;
+  border: none;
+  font-weight: bold;
   color: white;
 }
 
+.footer a,
 .footer {
   text-align: center;
-  background-color: aqua;
+  text-decoration: none;
+  color: white;
+  background-color: #024ca1;
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 815px) {
+  body {
+    padding: 8rem 1rem;
+  }
+
+  .modal {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
 }
