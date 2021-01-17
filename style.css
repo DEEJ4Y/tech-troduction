@@ -43,6 +43,7 @@ body {
 
 .heading {
   font-size: 1.7rem;
+  text-align: center;
 }
 
 .form-wrapper {
@@ -80,6 +81,10 @@ body {
   color: white;
 }
 
+.register-heading {
+  text-align: center;
+}
+
 .footer a,
 .footer {
   text-align: center;
@@ -88,15 +93,26 @@ body {
   background-color: #024ca1;
   font-variant: small-caps;
   font-weight: bolder;
+  width: 100%;
 }
 
 @media screen and (max-width: 815px) {
   body {
-    padding: 8rem 1rem;
+    padding-top: 6rem;
   }
 
   .modal {
     grid-template-columns: 1fr;
     padding: 2rem;
+  }
+
+  .image-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .modal {
+    min-width: 200px;
   }
 }
